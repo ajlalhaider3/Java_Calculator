@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>SIMPLE CALCULATOR</h1>
+
+
+    <form>
+        num1: <input type="number" id="num1">
+        <br>
+        num2: <input type="number" id="num2">
+        <br>
+        <button type="submit" onclick="doSum(); return false">Addition</button>        
+        <button type="submit" onclick="doSub(); return false">Subtraction</button>        
+        <button type="submit" onclick="doMul(); return false">Mutiplication</button>        
+        <button type="submit" onclick="doDiv(); return false">Divide</button> 
+        <button type="submit" onclick="doPer(); return false">Percentage</button>        
+
+    </form>
+    <h2 id="result"></h2>
+    
+
+    <script>
+        function doSum() {
+            
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+
+            console.log("num1: ",num1);
+            console.log("num2: ",num2);
+
+            let result1 = num1 + num2;
+
+            console.log("result: ",result1);
+            document.querySelector("#result").innerHTML = result1;
+
+        }
+        function doSub() {
+            
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+
+            console.log("num1: ",num1);
+            console.log("num2: ",num2);
+
+            let result2 = num1 - num2;
+
+            console.log("result: ",result2);
+            document.querySelector("#result").innerHTML = result2;
+
+        }
+        function doMul() {
+            
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+
+            console.log("num1: ",num1);
+            console.log("num2: ",num2);
+
+            let result3 = num1 * num2;
+
+            console.log("result: ",result3);
+            document.querySelector("#result").innerHTML = result3;
+
+        }
+        function doDiv() {
+            
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+
+            console.log("num1: ",num1);
+            console.log("num2: ",num2);
+
+            let result4 = num1 / num2;
+
+            console.log("result: ",result4);
+            document.querySelector("#result").innerHTML = result4;
+
+        }
+        function doPer() {
+            
+            let num1 = document.querySelector("#num1").value;
+            let num2 = document.querySelector("#num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+
+            console.log("num1: ",num1);
+            console.log("num2: ",num2);
+
+            let result5 = num1 / num2 * 100;
+
+            console.log("result: ",result5);
+            document.querySelector("#result").innerHTML = result5;
+
+        }
+        
+    </script>
+</body>
+</html>
